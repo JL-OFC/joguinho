@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="enigma">
+    <main id="fase-7-img">
+        <div>
+            <h1 class="enigma-questao">
+                "Take away my blood and bones <br>
+                Make your flowers deep inside of me"
+            </h1>
+
+        </div>
+        <div class="dica">
+            <h2>  4:3  <br>  9:14  <br>  8:7  <br>  13:3  <br>  11:16  <br>  7:14  <br>  16:10  <br>  15:7  <br>  9:1  <br>  22:11  <br>  10:18  <br>  2:2  <br>  12:11  </h2>
+        </div>
+        <div class="questao">
+            <label for="questao-7">Resposta:</label>
+            <input type="text" id="questao-7" name="questao-7"      placeholder="#######################" autocomplete="off">
+        </div>
+        <div class="botao-prox">
+            <a href="#" id="link" onclick="verificarResposta7(event)">Próximo</a>
+        </div>
+    </main>
+    
+
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fase6')) {
+                alert('Você deve completar a fase 6 antes de acessar este enigma!');
+                window.location.href = 'fase-6.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

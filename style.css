@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* Menu do Jogo */
+
+@font-face {
+    font-family: 'fonte-de-bixo';
+    src: url(font/Dragon\ Slayer.ttf) format('truetype');
+}
+
+
+:root{
+
+    --cor-primaria: #000000;
+    --cor-secundaria: #500894;
+    --cor-terciaria: #242424;
+    --cor-quarternaria: #7c0ee2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#enigma{
+    display: none;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: 'fonte-de-bixo', Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+main{
+    background-color: var(--cor-terciaria);
+    max-width: 1200px;
+    min-width: 320px;
+    height: auto;
+    margin: auto;
+    margin-top: 20%;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+main h1{
+    padding: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+}
+
+main .celular{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+main .triangulo{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+main #fase-4-img{
+    padding: 40px;
+}
+
+main .img-6{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#fase-7-img{
+    background-image: url(/img/img-7.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .questao{
+    padding: 30px;
+}
+
+main .questao > label{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+}
+
+main .audio-container{
+    padding: 50px;
+}
+
+.botao-prox{
+    padding: 20px 40px;
+}
+
+.botao-prox > a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 80px;
+    background-color: var(--cor-secundaria);
+}
+
+.botao-prox2 > a:hover{
+    background-color: var(--cor-quarternaria);
+    transition-duration: 0.5s;
+}
+
+.botao-prox2{
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.botao-prox2 > a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 80px;
+    background-color: var(--cor-secundaria);
+}
+
+.botao-prox2 > a:hover{
+    background-color: var(--cor-quarternaria);
+    transition-duration: 0.5s;
+}
+
+.container-botoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/* MENU */
+
+#menu-1{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: 'fonte-de-bixo', Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 900px;
+    background-size: cover;
+    background-image: url(img/nevoa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+#title-1{
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 48px;
+    letter-spacing: 20px;
+    background-image: linear-gradient(to right, var(--cor-primaria), var(--cor-quarternaria));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#title-1:hover{
+    transform: scaleX(-1);
+}
+
+#botao-menu{
+    display: block;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.botao-prox{
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.botao-prox > a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 80px;
+    background-color: var(--cor-secundaria);
+}
+
+.botao-prox > a:hover{
+    background-color: var(--cor-quarternaria);
+    transition-duration: 0.5s;
+}

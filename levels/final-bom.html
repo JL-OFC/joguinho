@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!!!</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="enigma">
+    <main>
+        <h1 class="enigma-questao">Você Venceu</h1>
+        <h2 class="enigma-questao">Parabéns!!! Você Concluiu Todos Os Desafios Principais. <br>O Conhecimento É Sua Recompensa</h2>
+        <h2 class="enigma-questao">Deseja Refazer?</h2>
+        <div class="botao-prox2">
+            <a id="link" onclick="reiniciarJogo()">Sim</a>
+        </div>
+    </main>
+    
+    
+    
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fasefinal')) {
+                alert('Você deve completar a fase final antes de acessar este enigma!');
+                window.location.href = 'fase-final.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+
+
+    <script>
+        function reiniciarJogo() {
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

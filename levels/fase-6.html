@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfeição da Natureza</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="enigma">
+    <main>
+        <div>
+            <h1 id="title-6" class="enigma-questao">QBTDIWKJ</h1>
+        </div>
+
+        <img class="img-6" src="../img/img-6.jpg" alt="">
+
+        <div class="questao">
+            <label for="questao-6">Decodifique:</label>
+            <input type="text" id="questao-6" name="questao-6"      placeholder="#######################" autocomplete="off">
+        </div>
+        <div class="botao-prox">
+            <a href="#" id="link" onclick="verificarResposta6(event)">Próximo</a>
+        </div>
+    </main>
+
+
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fase5')) {
+                alert('Você deve completar a fase 5 antes de acessar este enigma!');
+                window.location.href = 'fase-5.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

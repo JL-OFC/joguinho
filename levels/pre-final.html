@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@%##%&&%@@#</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="enigma">
+    <main>
+        <h1 id="enigma-1-questao">@%##%&&%@@#</h1>
+        <div class="audio-container">
+            <audio src="../media/audio-final.mp3" controls></audio>
+        </div>
+        <div class="container-botoes">
+            <div class="botao-prox">
+                <a href="fase-final.html" id="link">Próximo</a>
+            </div>
+            <div class="botao-prox">
+                <a href="final-ruim.html" id="link">Desistir</a>
+            </div>
+        </div>
+    </main>
+
+    
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fase8')) {
+                alert('Você deve completar a fase 8 antes de acessar este enigma!');
+                window.location.href = 'fase-8.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

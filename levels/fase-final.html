@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que represento?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="enigma">
+    <main>
+        <h1 class="enigma-questao">@tivwmwxirgme_0_0</h1>
+        <h2 class="dica">Rota 4</h2>
+        <div class="questao">
+            <label for="questao-final">Resposta:</label>
+            <input type="text" id="questao-final" name="questao-final"      placeholder="#######################" autocomplete="off">
+        </div>
+        <div class="botao-prox">
+            <a href="#" id="link" onclick="verificarRespostaFinal(event)">Próximo</a>
+        </div>
+    </main>
+
+
+
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fase8')) {
+                alert('Você deve completar a fase 8 antes de acessar este enigma!');
+                window.location.href = 'fase-8.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

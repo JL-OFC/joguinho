@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Orelhas/2</title>
+</head>
+<body id="enigma">
+    <main>
+        <div>
+            <h1 class="enigma-questao">
+                "Não tenho certeza de nada, mas a visão das estrelas me faz sonhar."
+            </h1>
+        </div>
+        <div class="questao">
+            <label for="questao-2">Artista:</label>
+            <input type="text" id="questao-2" name="questao-2"      placeholder="#######################" autocomplete="off">
+        </div>
+        <div class="botao-prox">
+            <a href="#" id="link" onclick="verificarResposta2(event)">Próximo</a>
+        </div>
+    </main>
+
+
+    <script>
+        window.onload = function() {
+        if (!sessionStorage.getItem('fase1')) {
+                alert('Você deve completar a fase 1 antes de acessar este enigma!');
+                window.location.href = 'fase-1.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

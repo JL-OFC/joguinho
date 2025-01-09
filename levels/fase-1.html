@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/??/2025 &#x1F33D;</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="enigma">
+    <main>
+        <h1 id="enigma-1-questao">J F M A M ? J A S O N D</h1>
+        <div class="questao">
+            <label for="questao-1">Resposta:</label>
+            <input type="text" id="questao-1" name="questao-1"      placeholder="#######################" autocomplete="off">
+        </div>
+        <div class="botao-prox">
+            <a href="#" id="link" onclick="verificarResposta1(event)">Próximo</a>
+        </div>
+    </main>
+
+
+    <script>window.onload = function() {
+        if (!sessionStorage.getItem('fase0')) {
+                alert('Você deve completar a fase de teste antes de acessar este enigma!');
+                window.location.href = 'fase-0.html';
+            } else {
+                document.getElementById('enigma').style.display = 'block';
+            }
+        };
+    </script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
